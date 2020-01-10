@@ -128,17 +128,17 @@ impl Colours {
 
             perms: Permissions {
                 user_read:           Yellow.normal(),
-                user_write:          Yellow.normal(),
-                user_execute_file:   Green.bold(),
-                user_execute_other:  Green.bold(),
+                user_write:          Cyan.normal(),
+                user_execute_file:   Purple.normal(),
+                user_execute_other:  Purple.normal(),
 
                 group_read:          Yellow.normal(),
-                group_write:         Red.normal(),
-                group_execute:       Green.normal(),
+                group_write:         Cyan.normal(),
+                group_execute:       Purple.normal(),
 
                 other_read:          Yellow.normal(),
-                other_write:         Red.normal(),
-                other_execute:       Green.normal(),
+                other_write:         Cyan.normal(),
+                other_execute:       Purple.normal(),
 
                 special_user_file:   Purple.normal(),
                 special_other:       Purple.normal(),
