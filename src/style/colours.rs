@@ -127,18 +127,18 @@ impl Colours {
             },
 
             perms: Permissions {
-                user_read:           Yellow.bold(),
-                user_write:          Red.bold(),
-                user_execute_file:   Green.bold().underline(),
-                user_execute_other:  Green.bold(),
+                user_read:           Yellow.normal(),
+                user_write:          Cyan.normal(),
+                user_execute_file:   Purple.normal(),
+                user_execute_other:  Purple.normal(),
 
                 group_read:          Yellow.normal(),
-                group_write:         Red.normal(),
-                group_execute:       Green.normal(),
+                group_write:         Cyan.normal(),
+                group_execute:       Purple.normal(),
 
                 other_read:          Yellow.normal(),
-                other_write:         Red.normal(),
-                other_execute:       Green.normal(),
+                other_write:         Cyan.normal(),
+                other_execute:       Purple.normal(),
 
                 special_user_file:   Purple.normal(),
                 special_other:       Purple.normal(),
@@ -147,10 +147,10 @@ impl Colours {
             },
 
             size: Size {
-                numbers:  Green.bold(),
+                numbers:  Green.normal(),
                 unit:     Green.normal(),
 
-                major:  Green.bold(),
+                major:  Green.normal(),
                 minor:  Green.normal(),
 
                 scale_byte: Fixed(118).normal(),
@@ -161,15 +161,15 @@ impl Colours {
             },
 
             users: Users {
-                user_you:           Yellow.bold(),
+                user_you:           Cyan.normal(),
                 user_someone_else:  Style::default(),
                 group_yours:        Yellow.bold(),
                 group_not_yours:    Style::default(),
             },
 
             links: Links {
-                normal:          Red.bold(),
-                multi_link_file: Red.on(Yellow),
+                normal:          Cyan.bold(),
+                multi_link_file: Cyan.on(Yellow),
             },
 
             git: Git {
@@ -190,7 +190,7 @@ impl Colours {
             symlink_path:         Cyan.normal(),
             control_char:         Red.normal(),
             broken_symlink:       Red.normal(),
-            broken_path_overlay:  Style::default().underline(),
+            broken_path_overlay:  Style::default(),
         }
     }
 }
